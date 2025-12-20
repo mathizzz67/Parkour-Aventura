@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- TÍTULO QUE APARECERÁ EN GOOGLE -->
-    <title>Parkour Aventura 2D </title>
+    <title>Parkour Aventura - Juego Gratis de Parkour 2D | 10 Niveles</title>
     
     <!-- DESCRIPCIÓN QUE VERÁN EN GOOGLE -->
-    <meta name="description" content="Juego de parkour 2D gratis. Controla a tu personaje, salta obstáculos, derrota enemigos y completa 10 niveles desafiantes. ¡Juego sin descargas!">
+    <meta name="description" content="Juego de parkour 2D gratis en google. Controla a tu personaje, salta obstáculos, derrota enemigos y completa 10 niveles desafiantes de plataformas. Juego HTML5 sin descargas, creado con JavaScript. ¡Juega ahora gratis!">
     
     <!-- PALABRAS CLAVE -->
     <meta name="keywords" content="juego parkour, juego 2d, juego gratis, juego online, html5 game, juego de plataformas, juego gratis sin descargar">
@@ -180,9 +180,53 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
             z-index: 10;
         }
+
+        /* Clase para ocultar visualmente pero mantener accesible para SEO */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
     </style>
 </head>
 <body>
+    <!-- ========== CONTENIDO PARA GOOGLE (OCULTO VISUALMENTE) ========== -->
+    <div class="sr-only">
+        <h1>Parkour Aventura - Juego Gratis de Plataformas 2D</h1>
+        
+        <p>Juega gratis a Parkour Aventura, un emocionante juego de plataformas 2D con 10 niveles desafiantes. Controla a tu personaje, salta obstáculos, derrota enemigos y completa todos los niveles en esta aventura de parkour creada con JavaScript.</p>
+        
+        <h2>¿Cómo jugar Parkour Aventura?</h2>
+        <ul>
+            <li>Movimiento: Usa las teclas Flechas o WASD para moverte</li>
+            <li>Saltar: Presiona la tecla Barra espaciadora o Flecha arriba</li>
+            <li>Pausa: Presiona ESC para pausar el juego</li>
+        </ul>
+        
+        <h2>Características del juego</h2>
+        <ul>
+            <li>10 niveles con dificultad progresiva</li>
+            <li>Sistema de checkpoints para guardar tu progreso</li>
+            <li>Personalización del personaje (color de cuerpo, camisa y pantalón)</li>
+            <li>3 niveles de dificultad (Fácil, Normal, Difícil)</li>
+            <li>Plataformas móviles y power-ups de velocidad</li>
+            <li>Enemigos inteligentes con patrullaje automático</li>
+            <li>Totalmente gratuito y se juega directamente en el navegador</li>
+        </ul>
+        
+        <h2>Compatibilidad</h2>
+        <p>Parkour Aventura funciona en todos los navegadores modernos (Chrome, Firefox, Safari, Edge) y es compatible con la mayoría de dispositivos.</p>
+        
+        <p>Este juego está creado con HTML5 Canvas y JavaScript puro. Para la mejor experiencia, asegúrate de tener JavaScript habilitado en tu navegador.</p>
+    </div>
+    <!-- ========== FIN DEL CONTENIDO PARA GOOGLE ========== -->
+    
     <canvas id="gameCanvas"></canvas>
     
     <div id="hud">
@@ -1333,6 +1377,10 @@
         };
 
         // Iniciar juego
+        game.init();
+    </script>
+</body>
+</html>
         game.init();
     </script>
 </body>
