@@ -1,20 +1,22 @@
+# Bing-compatible robots.txt
+# Para: https://mathizzz67.github.io/Parkour-Aventura/
+# Última actualización: 2024-01-17
+
 User-agent: *
 Allow: /
-Sitemap: https://tu-usuario.github.io/tu-repositorio/sitemap.xml
 
-# Los siguientes son archivos de GitHub que NO queremos que indexen
-Disallow: /README.md
-Disallow: /LICENSE
-Disallow: /.gitignore
-Disallow: /node_modules/
-Disallow: /package.json
-Disallow: /package-lock.json
+User-agent: bingbot
+Allow: /
+Crawl-delay: 3
 
-# User agents específicos
-User-agent: Googlebot
+User-agent: msnbot
+Allow: /
+Crawl-delay: 3
+
+User-agent: adidxbot
 Allow: /
 
-User-agent: Bingbot
+User-agent: Googlebot
 Allow: /
 
 User-agent: Slurp
@@ -23,31 +25,29 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# Crawl-delay (opcional para evitar sobrecarga)
-Crawl-delay: 2User-agent: *
+User-agent: Baiduspider
 Allow: /
-Sitemap: https://tu-usuario.github.io/tu-repositorio/sitemap.xml
 
-# Los siguientes son archivos de GitHub que NO queremos que indexen
+# NO indexar archivos técnicos
 Disallow: /README.md
 Disallow: /LICENSE
 Disallow: /.gitignore
+Disallow: /.github/
 Disallow: /node_modules/
 Disallow: /package.json
 Disallow: /package-lock.json
+Disallow: /*.log$
+Disallow: /*.tmp$
 
-# User agents específicos
-User-agent: Googlebot
-Allow: /
+# Sitemaps (AMBOS formatos)
+Sitemap: https://mathizzz67.github.io/Parkour-Aventura/sitemap.xml
+Sitemap: https://mathizzz67.github.io/Parkour-Aventura/sitemap.txt
 
-User-agent: Bingbot
-Allow: /
+# Bing-specific directives
+# Bing entiende estas directivas mejor
+User-agent: bingbot
+Request-rate: 1/10
+Visit-time: 0600-2300
 
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-# Crawl-delay (opcional para evitar sobrecarga)
-Crawl-delay: 2
+# Host directive (importante para Bing)
+Host: mathizzz67.github.io
