@@ -1,0 +1,53 @@
+User-agent: *
+Allow: /
+Sitemap: https://tu-usuario.github.io/tu-repositorio/sitemap.xml
+
+# Los siguientes son archivos de GitHub que NO queremos que indexen
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /.gitignore
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# User agents específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Crawl-delay (opcional para evitar sobrecarga)
+Crawl-delay: 2User-agent: *
+Allow: /
+Sitemap: https://tu-usuario.github.io/tu-repositorio/sitemap.xml
+
+# Los siguientes son archivos de GitHub que NO queremos que indexen
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /.gitignore
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# User agents específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Crawl-delay (opcional para evitar sobrecarga)
+Crawl-delay: 2
