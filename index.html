@@ -8,8 +8,8 @@
     <!-- TÍTULO QUE APARECERÁ EN GOOGLE -->
     <title>Parkour Aventura - Juego Gratis de Parkour 2D | 10 Niveles</title>
     
-    <!-- DESCRIPCIÓN QUE VERÁN EN GOOGLE -->
-    <meta name="description" content="Juego de parkour 2D gratis en google. Controla a tu personaje, salta obstáculos, derrota enemigos y completa 10 niveles desafiantes de plataformas. Juego HTML5 sin descargas, creado con JavaScript. ¡Juega ahora gratis!">
+    <!-- DESCRIPCIÓN CORREGIDA (158 caracteres) -->
+    <meta name="description" content="Juego de parkour 2D gratis. Salta obstáculos, derrota enemigos y completa 10 niveles. Juego HTML5 sin descargas. ¡Juega ahora gratis online!">
     
     <!-- PALABRAS CLAVE -->
     <meta name="keywords" content="juego parkour, juego 2d, juego gratis, juego online, html5 game, juego de plataformas, juego gratis sin descargar">
@@ -67,7 +67,7 @@
             display: block;
         }
 
-        .menu h1 {
+        .menu h2 {
             font-size: 48px;
             margin-bottom: 30px;
             color: #FFD700;
@@ -238,7 +238,7 @@
 
     <!-- Menú Principal -->
     <div id="mainMenu" class="menu active">
-        <h1>🎮 PARKOUR ADVENTURE</h1>
+        <h2>🎮 PARKOUR ADVENTURE</h2>
         <p style="color: #FFD700; font-size: 18px; margin-bottom: 10px;">10 Niveles de Desafío Épico</p>
         <p style="color: #87CEEB; font-size: 14px; margin-bottom: 20px;">Controles: ←→ Mover | ↑/Espacio Saltar | ESC Pausa</p>
         <button onclick="game.startGame()">JUGAR</button>
@@ -296,7 +296,7 @@
 
     <!-- Menú Victoria -->
     <div id="victoryMenu" class="menu">
-        <h1>🏆 ¡NIVEL COMPLETADO!</h1>
+        <h2>🏆 ¡NIVEL COMPLETADO!</h2>
         <p id="victoryLevelInfo" style="font-size: 20px; margin: 15px 0;"></p>
         <button onclick="game.nextLevel()">SIGUIENTE NIVEL</button>
         <button onclick="game.restartLevel()">REINICIAR NIVEL</button>
@@ -305,7 +305,7 @@
 
     <!-- Menú Game Over -->
     <div id="gameOverMenu" class="menu">
-        <h1>💀 HAS PERDIDO</h1>
+        <h2>💀 HAS PERDIDO</h2>
         <button onclick="game.restartLevel()">REINICIAR NIVEL</button>
         <button onclick="game.backToMainFromPause()">MENÚ PRINCIPAL</button>
     </div>
@@ -1377,10 +1377,6 @@
         };
 
         // Iniciar juego
-        game.init();
-    </script>
-</body>
-</html>
         game.init();
     </script>
 </body>
